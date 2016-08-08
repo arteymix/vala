@@ -735,7 +735,7 @@ public class Vala.SemanticAnalyzer : CodeVisitor {
 		return instance_base_type;
 	}
 
-	static DataType? get_instance_base_type_for_member (DataType derived_instance_type, TypeSymbol type_symbol, CodeNode node_reference) {
+	public static DataType? get_instance_base_type_for_member (DataType derived_instance_type, TypeSymbol type_symbol, CodeNode node_reference) {
 		DataType instance_type = derived_instance_type;
 
 		while (instance_type is PointerType) {

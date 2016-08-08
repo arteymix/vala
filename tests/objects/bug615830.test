@@ -1,0 +1,12 @@
+Invalid Code
+
+class Foo<T> {
+}
+
+class Bar<T> : Foo<T> {
+}
+
+int main (string[] args) {
+	Foo<int> f = new Bar<string> ();
+	return 0;
+}

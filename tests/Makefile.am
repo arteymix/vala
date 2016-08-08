@@ -124,6 +124,7 @@ TESTS = \
 	delegates/bug703804.vala \
 	objects/chainup.vala \
 	objects/classes.vala \
+	objects/generics.vala \
 	objects/fields.vala \
 	objects/interfaces.vala \
 	objects/methods.vala \
@@ -167,6 +168,7 @@ TESTS = \
 	objects/bug751338.vala \
 	objects/bug767092.test \
 	objects/bug768823.test \
+	objects/bug615830.test \
 	errors/errors.vala \
 	errors/bug567181.vala \
 	errors/bug579101.vala \
