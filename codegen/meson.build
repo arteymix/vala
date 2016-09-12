@@ -1,0 +1,32 @@
+codegen_sources = [
+    'valaccodearraymodule.vala',
+    'valaccodeassignmentmodule.vala',
+    'valaccodeattribute.vala',
+    'valaccodebasemodule.vala',
+    'valaccodecompiler.vala',
+    'valaccodecontrolflowmodule.vala',
+    'valaccodedelegatemodule.vala',
+    'valaccodememberaccessmodule.vala',
+    'valaccodemethodcallmodule.vala',
+    'valaccodemethodmodule.vala',
+    'valaccodestructmodule.vala',
+    'valaclassregisterfunction.vala',
+    'valactype.vala',
+    'valaenumregisterfunction.vala',
+    'valagasyncmodule.vala',
+    'valagdbusclientmodule.vala',
+    'valagdbusmodule.vala',
+    'valagdbusservermodule.vala',
+    'valagerrormodule.vala',
+    'valagirwriter.vala',
+    'valagobjectmodule.vala',
+    'valagsignalmodule.vala',
+    'valagtkmodule.vala',
+    'valagtypemodule.vala',
+    'valagvariantmodule.vala',
+    'valainterfaceregisterfunction.vala',
+    'valastructregisterfunction.vala',
+    'valatyperegisterfunction.vala']
+
+codegen_lib = library('codegen', codegen_sources, dependencies: [glib, gobject, valagee, ccode, vala])
+codegen = declare_dependency(link_with: codegen_lib, include_directories: include_directories('.'))
